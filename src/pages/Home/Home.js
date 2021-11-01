@@ -17,7 +17,6 @@ const ItemCard = ({
 		}
 	}, []);
 	const formattedString = productName[0].toUpperCase() + productName.slice(1);
-	console.log(formattedString);
 
 	const addItemToCart = useCallback((item, cost) => {
 		setBlocked(true);

@@ -111,7 +111,6 @@ const CartBlock = () => {
 			'userCart',
 			JSON.stringify(store.currentItemsList)
 		);
-		console.log('render');
 	}, [store]);
 	return (
 		<div>
