@@ -10,29 +10,7 @@ body, html {
   background-color: #F1F2F8;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
-  
-  &--arrow {
-    fill: #6246ea;
-    transform: rotate(90deg);
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    transition: 0.2s ease;
-    &:hover {
-      cursor: pointer;
-      transform: rotate(270deg);
-    }
-    &.active {
-      &:hover {
-        transform: rotate(90deg);
-      }
-      transform: rotate(270deg);
-    }
-  }
-}
+
 
 
 

@@ -16,6 +16,8 @@ const ItemCard = ({
 			setBlocked(true);
 		}
 	}, []);
+	const formattedString = productName[0].toUpperCase() + productName.slice(1);
+	console.log(formattedString);
 
 	const addItemToCart = useCallback((item, cost) => {
 		setBlocked(true);
@@ -34,10 +36,10 @@ const ItemCard = ({
 			}
 		>
 			<div className='assortments__card'>
-				<h3 className='assortments__title'>{productName}</h3>
-				<div className='assortments__description'>
-					Вкусные спелые яблоки
-				</div>
+				<h3 className='assortments__title'>
+					Название: {formattedString}
+				</h3>
+				<div className='assortments__description'></div>
 				<p className='assortments__price'>Стоимость: {productPrice}$</p>
 				<button
 					disabled={blocked && true}
@@ -80,7 +82,7 @@ const AssortmentGoods = () => {
 const MainPage = () => {
 	return (
 		<>
-			<h1>MAin</h1>
+			<h1 className='home__title'>Доступные товары</h1>
 			<AssortmentGoods />
 		</>
 	);

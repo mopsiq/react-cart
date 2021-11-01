@@ -6,10 +6,12 @@ const CartItem = ({ item, id, deleteFunc, addFunc, updateCounterFunc }) => {
 	const findPrice = store.productsList.find(
 		(elem) => elem.name === item.name
 	);
+	const formattedString = item.name[0].toUpperCase() + item.name.slice(1);
+
 	return (
 		<>
 			<div className='cart__item'>
-				<h3 className='cart__name'>Название:{item.name}</h3>
+				<h3 className='cart__name'>Название:{formattedString}</h3>
 				<span>Итоговая стоимость: {item.cost}$</span>
 				<div className='cart__info'>
 					<button
