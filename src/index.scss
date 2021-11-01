@@ -1,0 +1,41 @@
+@import './assets/styles/_variables';
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F1F2F8;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  
+  &--arrow {
+    fill: #6246ea;
+    transform: rotate(90deg);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    transition: 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      transform: rotate(270deg);
+    }
+    &.active {
+      &:hover {
+        transform: rotate(90deg);
+      }
+      transform: rotate(270deg);
+    }
+  }
+}
+
+
+
+@import './Components/Header/Header.scss';
+@import './pages/Home/Home.scss';
+@import './pages/Cart/Cart.scss';

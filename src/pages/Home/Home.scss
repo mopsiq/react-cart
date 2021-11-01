@@ -1,0 +1,83 @@
+.home {
+  position: relative;
+}
+
+.assortments {
+}
+
+.assortments__inner {
+ display: flex;
+ flex-wrap: wrap;
+//  justify-content: center;
+ width: 100%;
+//  margin: 0 0 0 2.5rem;
+}
+
+.assortments__item {
+  width: 33%;
+  min-width: 270px;
+  margin: 1rem;
+  &.abbreviated {
+    // width: 33%;
+  }
+  &.discount  {
+
+  }
+}
+.assortments__card {
+  background-color: $lightgray;
+  border-radius: 10px;
+  border: 1px solid #000;
+  
+  padding: 1rem;
+}
+
+.assortments__title {
+  text-align: center;
+}
+
+.assortments__description {
+  text-align: center;
+}
+
+.assortments__button {
+  border: none;
+  border-radius: 5px;
+  background-color: $tertiary;
+  color: #fff;
+
+  &.blocked {
+    background-color: #ccc;
+    &:hover {
+      cursor: auto;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  
+  &--arrow {
+    fill: #6246ea;
+    transform: rotate(90deg);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    transition: 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      transform: rotate(270deg);
+    }
+    &.active {
+      &:hover {
+        transform: rotate(90deg);
+      }
+      transform: rotate(270deg);
+    }
+  }
+}

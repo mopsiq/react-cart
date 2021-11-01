@@ -1,0 +1,34 @@
+.header {
+  padding: 1rem;
+  background-color: $headline;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+
+.nav {
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+  position: relative;
+  &--right {
+    margin-left: auto;
+  }
+}
+
+.nav__counter {
+  position: absolute;
+  bottom: -0.7rem;
+  right: 1rem;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+
+  background-color: $secondary;
+  border-radius: 50%;
+  color: #000;
+}
