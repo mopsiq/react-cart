@@ -1,14 +1,13 @@
-.cart {
-  
-}
 
 .cart__title {
   text-align: center;
 }
 
-.cart__subtitle {
+.cart__header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0px 2px 21px -1px rgba(153,140,140,0.52);
   -webkit-box-shadow: 0px 2px 21px -1px rgba(153,140,140,0.52);
@@ -21,6 +20,11 @@
   background-color: $secondary;
 }
 
+
+.cart__cost {
+  color: $tertiary;
+  font-weight: 900;
+}
 .cart__item {
   position: relative;
   width: 33%;
